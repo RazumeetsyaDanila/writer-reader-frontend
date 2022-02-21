@@ -48,7 +48,7 @@ const Writer = observer(() => {
             await messages_delete(message_id)
             setModal(false)
             console.log(message_id)
-            alert("Сообщение id: " + message_id + " удалено!")
+            alert("Сообщение id:" + message_id + " удалено!")
         } catch (e) {
             alert(e.response.data.message)
         }
